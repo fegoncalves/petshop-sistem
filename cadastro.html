@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Reformulado de PetShop do Prof Caio Delgado na Digital Innovation One</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+
+<body>
+
+  <div class="geral">
+
+
+
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.jpg"></a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cadastro.html">Cadastrar</a></li>
+          <li><a href="consultar.html">Consultar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <!-- Conteúdo principal do site -->
+    <main>
+      <div class="wrapper">
+
+        <!-- Imagem -->
+        <div class="pet-image image-cadastro">
+          <img src="images/12.png">
+        </div>
+
+
+
+        
+        <!-- Conteúdo de interação -->
+        <div class="cadastro-content">        
+          <h1>Cadastro de Pets</h1>
+
+          <div class="bg-form">
+            <form action="#">
+              <div><!-- RETIRADO O FOR DO LABEL: REGISTRO, NOME, TIPO, IDADE.  W3SCHOOL DIZ QUE ELE SERVE PRA VINCULAR COM O ID E DEVE TER O MESMO NOME.  RETIRADO TAMBÉM A CLASSE relatorioPets DO LABEL -->
+                  <label>Nº do Registro:</label>
+                  <input type="text" id="registroPet" placeholder="Ex: 01" />
+              </div>
+              <div>
+                  <label>Nome:</label>
+                  <input type="text" id="nomePet" placeholder="Insira o nome" />
+              </div>
+              <div>
+                  <label>Tipo:</label>
+                  <input type="text" id="tipoPet" placeholder="Ex: cão, gato, peixe, ..." />
+              </div>
+              <div>
+                  <label>Idade:</label>
+                  <input type="text" id="idadePet" placeholder="Ex: 1 ano" />
+              </div>
+
+              <div id="btn-envio">
+                <input type="button" value="Cadastrar" class="" onclick="preenchimentoCampos('registroPet', 'nomePet', 'tipoPet', 'idadePet')">
+                <input type="reset" id="cancelar" class="" value="Cancelar"/>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <!-- /wrapper -->
+    </main>
+
+
+
+  </div>
+  <!-- /geral -->
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+
+</body>
+</html>

@@ -6,16 +6,23 @@
 }
 
 body{
-  background:linear-gradient(rgba(255,255,255,.52),rgba(255,255,255,.52)), url(../images/bg1.jpg);
+  background:linear-gradient(rgba(255,255,255,.72),rgba(255,255,255,.52)), url(../images/bg1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
+  min-height: 100vh;
   overflow-y: hidden;
   font-family: 'Baloo 2', cursive;
   font-weight: 400;
   color: #2F1242;
+}
+
+/* ID do body que dá permissão a exibição da barra de rolagem na página de consulta */
+#vertical{ 
+  min-height: initial;
+  overflow: auto;
 }
 
 p{
@@ -43,6 +50,8 @@ h2{
   min-height: 100vh;
 }
 
+/* Header com logo e nav 
+========================*/
 header{
   background-color: #FFF;
   display: flex;  
@@ -57,7 +66,7 @@ header .logo,
 header nav,
 .index-content,
 .cadastro-content,
-.consulta-content,
+#consulta-content,
 .pet-image{
   width: 50%;
 }
@@ -97,15 +106,10 @@ header nav a:active{
 
 
 
-
+/* Conteúdo principal 
+=====================*/
 .wrapper{
   margin-top: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pet-image{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,13 +120,34 @@ header nav a:active{
   height: auto;
 }
 
+.image-cadastro img{
+  width: 98%;
+  height: auto;
+}
+
+.image-consultar img{
+  width: 74%;
+  height: auto;
+}
+
 .index-content span{
   color: #FD64A7;
 }
 
+.cadastro-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.consulta-content ul li{
+  margin-left: 60px;
+}
 
 
 
+/* Links das redes sociais na index 
+===================================*/
 .links div{
   display: flex;
   align-items: center;
@@ -150,3 +175,66 @@ header nav a:active{
 }
 
 
+
+
+/* Formulário de cadastro 
+=========================*/
+.bg-form{
+  width: 300px;
+  padding: 5px 16px;
+  background-color: #2F1242;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+form div{
+  margin: 16px;
+}
+
+label{
+  display: inline-block;
+  width: 120px;
+  color: #FFF;
+}
+
+input{
+  width: 200px;
+  height: 30px;
+  border-radius: 2px;
+  display: block;
+  margin-top: 2px;
+  padding-left: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+}
+
+#btn-envio input,
+#consulta-content input{
+  display: inline-block;
+  width: 98px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0;
+  background-color: #DDCBFD;
+  color: #2F1242;
+  font-weight: 700;
+  border: 0;
+}
+#btn-envio input:hover{
+  background-color: #FFF;
+  color: #2F1242;
+}
+#consulta-content input:hover{
+  background-color: #b048c5;
+  color: #FFF;
+}
+#registroPet::placeholder,
+#nomePet::placeholder,
+#tipoPet::placeholder,
+#idadePet::placeholder{
+  color: #CCC;
+}

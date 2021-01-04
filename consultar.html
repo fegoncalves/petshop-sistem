@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Reformulado de PetShop do Prof Caio Delgado na Digital Innovation One</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <script src="js/script.js"></script>
+</head>
+ 
+
+ <body id="vertical">
+
+  <div class="geral">
+
+
+
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.jpg"></a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cadastro.html">Cadastrar</a></li>
+          <li><a href="consultar.html">Consultar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   
+
+
+
+
+    <!-- Conteúdo principal do site -->
+    <main>
+      <div class="wrapper">
+
+        <!-- Imagem -->
+        <div class="pet-image image-consultar">
+          <img src="images/8.png">
+        </div>
+
+
+        <!-- Conteúdo de interação -->
+        <div id="consulta-content">
+          <script>listarCadastros();</script>
+
+          <p>Clique no botão para limpar o objeto localStorage do seu navegador<br/><input type="button" id="limpar" value="Limpar" class="" onclick="limparStorage()"></p>
+        </div>
+
+      </div>
+      <!-- /wrapper -->
+    </main>
+
+
+
+
+
+
+  </div>
+  <!-- /geral -->
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+@media (max-width: 1212px) {
+  .geral {
+    margin: 10px 100px;  
+  }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .geral {
+    margin: 10px 20px;  
+  }
+  
+  header{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .logo,
+  header nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #consulta-content{
+    margin-left: 30px;
+  }
+
+  .index-content,
+  .cadastro-content,
+  #consulta-content,
+  .pet-image{
+    width: 100%;
+  }
+
+  .pet-image {
+    display: none;
+  }  
+}
+
+
+
+
+
+@media (max-width: 365px) {  
+  header nav a,
+  label{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 36px;
+  }
+
+  .bg-form{
+    width: 280px;
+    padding: 5px 6px;
+  }  
+}

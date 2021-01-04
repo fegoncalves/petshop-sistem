@@ -13,3 +13,6 @@ Resumidamente, a inspiração desse mini projeto se deu por meio de uma aula que
 Falando de um modo geral, durante os estudos javaScript fui ficando cada vez mais curiosa/ansiosa para criar uma interação do javaScript com uma página HTML e aqui estou!
 
 O propósito desse desafio foi e continuará sendo praticar javaScript, escrevendo códigos diferentes para obter os mesmos resultados, acrescentando funcionalidades que vou aprendendo, entre outros, pois acredito que somente através da prática é possível alcançar um maior entendimento de todo aprendizado que tenho adquirido e assim evoluir. O outro propósito, é de inspirar outros iniciantes de HTML/programação a fazerem algo do tipo - caso não tenha feito ainda - e desafiar a si mesmo no mundo da programação e crescer <3 
+
+Página do projeto:
+https://fegoncalves.github.io/petshop-sistem/
